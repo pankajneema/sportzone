@@ -8,7 +8,7 @@ import TeamCard from "@/components/team-card"
 
 export default async function TeamsPage() {
   // In a real app, we would fetch this data from the API
-  const teams = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/cricket/teams`, {
+  const teams = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/cricket/teams`, {
     next: { revalidate: 3600 },
   })
     .then((res) => res.json())

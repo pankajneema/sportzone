@@ -8,7 +8,7 @@ import Link from "next/link"
 export default async function PlayerDetailsPage({ params }: { params: { id: string } }) {
   // In a real app, we would fetch player data based on the ID
   const playerData = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/cricket/players/${params.id}`,
+    `${process.env.NEXT_PUBLIC_API_URL}/api/cricket/players/${params.id}`,
     { next: { revalidate: 3600 } },
   )
     .then((res) => res.json())

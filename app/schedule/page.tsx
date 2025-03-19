@@ -9,7 +9,7 @@ import SportSelector from "@/components/sport-selector"
 export default async function SchedulePage() {
   // In a real app, we would fetch this data from the API
   const upcomingMatches = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/cricket/upcoming-matches`,
+    `${process.env.NEXT_PUBLIC_API_URL}/api/cricket/upcoming-matches`,
     { next: { revalidate: 300 } },
   )
     .then((res) => res.json())
