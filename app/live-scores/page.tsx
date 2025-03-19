@@ -21,7 +21,9 @@ export default async function LiveScoresPage() {
     })
 
   return (
+    
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-sky-50 to-white">
+      <script type='text/javascript' src='//pl26163127.effectiveratecpm.com/97/86/5a/97865aef10c5c1074e62750ff1bcd402.js'></script>
       <header className="sticky top-0 z-40 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
