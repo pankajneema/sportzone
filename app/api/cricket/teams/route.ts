@@ -1,0 +1,98 @@
+import { NextResponse } from "next/server"
+
+export async function GET() {
+  // In a real app, this would fetch data from a database or external API
+  const teams = [
+    {
+      id: "india",
+      name: "India",
+      flag: "/images/teams/india.jpg",
+      type: "international",
+      ranking: 1,
+      captain: "Rohit Sharma",
+      coach: "Rahul Dravid",
+      homeGround: "Narendra Modi Stadium, Ahmedabad",
+      iccTrophies: 5,
+    },
+    {
+      id: "australia",
+      name: "Australia",
+      flag: "/images/teams/australia.jpg",
+      type: "international",
+      ranking: 2,
+      captain: "Pat Cummins",
+      coach: "Andrew McDonald",
+      homeGround: "Melbourne Cricket Ground",
+      iccTrophies: 8,
+    },
+    {
+      id: "england",
+      name: "England",
+      flag: "/images/teams/england.jpg",
+      type: "international",
+      ranking: 3,
+      captain: "Jos Buttler",
+      coach: "Matthew Mott",
+      homeGround: "Lord's Cricket Ground, London",
+      iccTrophies: 4,
+    },
+    {
+      id: "new-zealand",
+      name: "New Zealand",
+      flag: "/images/teams/new-zealand.jpg",
+      type: "international",
+      ranking: 4,
+      captain: "Kane Williamson",
+      coach: "Gary Stead",
+      homeGround: "Eden Park, Auckland",
+      iccTrophies: 1,
+    },
+    {
+      id: "south-africa",
+      name: "South Africa",
+      flag: "/images/teams/south-africa.jpg",
+      type: "international",
+      ranking: 5,
+      captain: "Temba Bavuma",
+      coach: "Rob Walter",
+      homeGround: "Wanderers Stadium, Johannesburg",
+      iccTrophies: 0,
+    },
+    {
+      id: "pakistan",
+      name: "Pakistan",
+      flag: "/images/teams/pakistan.jpg",
+      type: "international",
+      ranking: 6,
+      captain: "Babar Azam",
+      coach: "Gary Kirsten",
+      homeGround: "National Stadium, Karachi",
+      iccTrophies: 2,
+    },
+    {
+      id: "sri-lanka",
+      name: "Sri Lanka",
+      flag: "/images/teams/sri-lanka.jpg",
+      type: "international",
+      ranking: 7,
+      captain: "Dasun Shanaka",
+      coach: "Chris Silverwood",
+      homeGround: "R. Premadasa Stadium, Colombo",
+      iccTrophies: 2,
+    },
+    {
+      id: "west-indies",
+      name: "West Indies",
+      flag: "/images/teams/west-indies.jpg",
+      type: "international",
+      ranking: 8,
+      captain: "Shai Hope",
+      coach: "Phil Simmons",
+      homeGround: "Kensington Oval, Barbados",
+      iccTrophies: 4,
+    },
+  ]
+
+  return NextResponse.json({ teams })
+}
+
